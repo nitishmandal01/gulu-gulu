@@ -5,7 +5,7 @@ import "./App.css";
 import Buttons from "./components/Buttons";
 import { ThemeProvider } from "@emotion/react";
 import { createTheme } from "@mui/material";
-import { lime, orange } from "@mui/material/colors";
+import { blue, lime, orange } from "@mui/material/colors";
 import Question from "./components/Question";
 import TwoButton from "./components/TwoButton";
 import Yes from "./components/Yes";
@@ -16,9 +16,9 @@ function App() {
   const theme = createTheme({
     palette: {
       primary: {
-        main: "#F30DD5",
-        light: lime[400],
-        dark: lime[900],
+        main: "#1976d2",
+        light: blue[400],
+        dark: blue[900],
       },
       secondary: orange,
     },
