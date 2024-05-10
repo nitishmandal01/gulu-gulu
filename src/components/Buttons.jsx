@@ -51,10 +51,10 @@ const Buttons = () => {
 
     // Set the button position
     setButtonPosition({ x, y });
+    setRandomIndex(Math.floor(Math.random() * (buttonArr.length - 1)) + 1);
   };
 
   const onMouseLeave = () => {
-    setRandomIndex(Math.floor(Math.random() * (buttonArr.length - 1)) + 1);
     // console.log("RandomIndex: ", randomIndex);
   };
 
@@ -79,8 +79,7 @@ const Buttons = () => {
       }}
       variant="contained"
       color="primary"
-      onMouseEnter={handleClick}
-      onMouseLeave={onMouseLeave}
+      onClick={handleClick}
     >
       {buttonArr[randomIndex]}
     </Button>

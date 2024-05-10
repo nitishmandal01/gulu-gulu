@@ -16,9 +16,9 @@ function App() {
   const theme = createTheme({
     palette: {
       primary: {
-        main: "#1976d2",
-        light: blue[400],
-        dark: blue[900],
+        main: "#d4e157",
+        light: lime[400],
+        dark: lime[900],
       },
       secondary: orange,
     },
